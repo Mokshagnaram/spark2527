@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    background: linear-gradient(to right, #410457, #4f39b1);
+}
+.event-info
+{
+    display: flex;
+    width: 50%;
+    height:auto;
+}
+.left{
+    display: inline;
+    width: 400px;
+    background-color: black;
+}
+.right{
+    display: inline;
+    width: 400px;
+    background-color: violet;
+}
+.welcome-content {
+    background-image: url("WhatsApp_Image_2025-02-11_at_14.03.27-removebg-preview.png"); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 600px; /* Ensure it spans full width */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text remains readable */
+
+}
+.welcome-content h1
+{
+   color:rgb(243, 236, 236);
+}
+#home {
+    background: url('Untitled\ design-6.png') no-repeat center center/cover;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+
+.welcome-logo {
+    max-width: 200%; /* Makes it as wide as possible */
+    
+    height: 100px; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the logo */
+}
+
+
+
+
+/* Header and Navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0;
+    position: fixed; /* Fix the header at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Full-screen Welcome Section */
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding-top: 60px; /* Add padding to account for the fixed header */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.welcome-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+/* Countdown Section */
+#countdown-section {
+    text-align: center;
+    padding: 100px 20px; /* Add more padding to separate from the welcome section */
+    background: linear-gradient(to right, #5a0b77, #5c46bd);
+}
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#timer span {
+    margin: 0 10px;
+}
+
+/* Circular Divs Section */
+#circular-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: linear-gradient(to right,#5a0b77, #4f39b1);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle:hover {
+    background-color: #555;
+}
+
+.circle span {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Ticket Container */
+.ticket-wrapper {
+    display: flex;
+    justify-content: center; /* Centers tickets */
+    gap: 30px; /* Space between tickets */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Individual Ticket Styling */
+.ticket-info {
+    background: linear-gradient(135deg,rgb(192, 66, 192),rgb(94, 31, 94)); /* Stylish gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 35%; /* Bigger width */
+    min-width: 280px; /* Prevents them from being too small */
+    text-align: center;
+    color: white; /* White text for contrast */
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.ticket-info:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(to right ,rgb(119, 3, 119),violet);
+    transition-duration: 2.15ms;
+}
+
+/* Ticket Headings */
+.ticket-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Ticket Details */
+.ticket-info p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Price Styling */
+.ticket-info p:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    .ticket-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ticket-info {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
+/* sports style */
+#home-sports {
+    background: url('Black\ Orange\ Red\ Yellow\ Simple\ Illustrated\ School\ Sports\ Fest\ Event\ Poster.png') no-repeat center center/cover;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+/* Sports Container */
+.sports-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual Sport Boxes */
+.sport-box {
+    height: 180px; /* Size of each box */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.sport-box:hover {
+    transform: scale(1.05);
+}
+
+/* Background Images */
+#cricket {
+    background-image: url('images/cricket.jpg');
+}
+#football {
+    background-image: url('images/football.jpg');
+}
+#basketball {
+    background-image: url('images/basketball.jpg');
+}
+#badminton {
+    background-image: url('images/badminton.jpg');
+}
+#volleyball {
+    background-image: url('images/volleyball.jpg');
+}
+#tabletennis {
+    background-image: url('images/tabletennis.jpg');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sports-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sports-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+    }
+}
